@@ -3,7 +3,9 @@
 exports[`About component matches snapshot DOM node structure 1`] = `
 <DocumentFragment>
   <section>
-    <h1>
+    <h1
+      data-testid="contact"
+    >
       Contact me
     </h1>
     <form
@@ -45,6 +47,7 @@ exports[`About component matches snapshot DOM node structure 1`] = `
         />
       </div>
       <button
+        data-testid="btn"
         type="submit"
       >
         Submit
