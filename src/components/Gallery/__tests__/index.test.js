@@ -5,7 +5,7 @@ import Gallery from '..'
 
 const portrait = { name: "portraits", description: "Portraits of people in my life" };
 
-afterEach(cleanup)
+afterEach(cleanup);
 
 describe('Gallery is rendering', () => {
 
