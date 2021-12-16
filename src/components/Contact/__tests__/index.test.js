@@ -18,15 +18,14 @@ describe('About component', () => {
 
         expect(asFragment()).toMatchSnapshot();
     })
+
+    it('renders', () => {
+        const { getByTestId } = render(<ContactForm />)
+        expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
+      })
+       
+    it('renders', () => {
+        const { getByTestId } = render(<ContactForm />)
+        expect(getByTestId('button')).toHaveTextContent('Submit')
+      })
   })
-
-  describe('links are visible', () => {
-    it('inserts text into the links', () => {
-        // Arrange
-        const { getByTestId } = render(<ContactForm />);
-
-        // Assert
-        expect(getByTestId('contact')).toHaveTextContent('Contact Me');
-        expect(getByTestId('btn')).toHaveTextContent('Submit');
-    });
-})
